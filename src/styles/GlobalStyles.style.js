@@ -1,23 +1,26 @@
-body {
+import {createGlobalStyle} from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+  body {
     font: 28px "Century Gothic", Futura, sans-serif;
     margin: 20px;
-}
+  }
 
-ol, ul {
+  ol, ul {
     padding-left: 30px;
-}
+  }
 
-.board-row:after {
+  .board-row:after {
     clear: both;
     content: "";
     display: table;
-}
+  }
 
-.status {
+  .status {
     margin-bottom: 10px;
-}
+  }
 
-.square {
+  .square {
     background: #fff;
     border: 1px solid #999;
     float: left;
@@ -30,17 +33,19 @@ ol, ul {
     padding: 0;
     text-align: center;
     width: 100px;
-}
+  }
 
-.square:focus {
+  .square:focus {
     outline: none;
-}
+  }
 
-.game {
+  .game {
     display: flex;
     flex-direction: row;
-}
+  }
 
-.game-info {
+  .game-info {
     margin-left: 20px;
-}
+  }
+
+`
