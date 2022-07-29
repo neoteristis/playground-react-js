@@ -1,8 +1,16 @@
 import React from "react";
 
 function Square(props) {
+
+    let className;
+    if (props.isWinner === true) {
+        className =  "square winner-square";
+    } else {
+        className = "square";
+    }
+
     return (
-        <button className="square" onClick={props.onClick}>
+        <button key={props.myKey} className={className} onClick={props.onClick}>
             {props.value}
         </button>
     );

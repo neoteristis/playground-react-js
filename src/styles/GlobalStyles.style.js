@@ -34,6 +34,10 @@ export const GlobalStyles = createGlobalStyle`
     text-align: center;
     width: 100px;
   }
+  
+  .winner-square {
+    background: forestgreen;
+  }
 
   .square:focus {
     outline: none;
